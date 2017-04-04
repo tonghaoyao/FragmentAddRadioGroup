@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tonghaoyao.fragmentradiogroup.MainActivity">
+
+    <include layout="@layout/activity_main_title" />
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_video"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_video_selector"
+            android:text="第一页面" />
+
+        <RadioButton
+            android:id="@+id/rb_audio"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_audio_selector"
+            android:text="第二页面" />
+
+        <RadioButton
+            android:id="@+id/rb_netvideo"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_netvideo_selector"
+            android:text="第三页面" />
+
+        <RadioButton
+            android:id="@+id/rb_netaudio"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_netaudio_selector"
+            android:text="第四页面" />
+    </RadioGroup>
+</LinearLayout>
